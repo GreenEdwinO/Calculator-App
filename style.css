@@ -1,0 +1,105 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Gotham Rounded';
+  font-weight: 500;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: rgb(33, 102, 192);
+}
+
+.cal-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.cal-grid button {
+  border-radius: .5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: gray;
+  color: aliceblue;
+}
+
+.cal-grid .nums {
+  background: rgb(24, 14, 14);
+}
+
+.cal-grid > button:hover {
+  background-color: rgba(238, 217, 217, 0.75);
+  color: black;
+  border: 1px solid black;
+  font-weight: 800;
+  transform: scale(1.035);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .55);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: .5rem;
+}
+
+.output .green  {
+  color: yellowgreen;
+  text-align: left;
+  border-top: 0;
+  padding-right: 125px;
+  padding-top: 0;
+  margin-right: 125px;
+  margin-top: 0;
+  font-weight: 200;
+  font-family: 'Calibri Light';
+}
+
+.output .green a {
+  color: yellowgreen;
+  font-family: 'Calibri Light';
+  text-decoration: none;
+}
+
+.output .green a:hover {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.output .first-space {
+  color:rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .second-space {
+  color: #fff;;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 780px) {
+  .cal-grid {
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    min-height: 100vh;
+  }
+}
