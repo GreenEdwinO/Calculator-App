@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: 'Gotham Rounded';
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
 }
 
@@ -30,7 +32,7 @@ body {
 }
 
 .cal-grid .nums {
-  background: rgb(24, 14, 14);
+  background: rgb(128, 106, 106);
 }
 
 .cal-grid > button:hover {
@@ -38,7 +40,6 @@ body {
   color: black;
   border: 1px solid black;
   font-weight: 800;
-  transform: scale(1.035);
   transition: 0.3s ease-in;
   cursor: pointer;
 }

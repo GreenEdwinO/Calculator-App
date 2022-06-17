@@ -22,7 +22,7 @@ buttons.map(button => {
           try{
             result.innerText = eval(display.innerText);
           } catch {
-            result.innerText = 'error!';
+            result.innerText = 'Error!';
             result.style.color = 'rgb(219, 154, 154)';
             window.setTimeout(function(){location.reload()},3000)
           }
