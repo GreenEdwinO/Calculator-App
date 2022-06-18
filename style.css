@@ -24,11 +24,13 @@ body {
 .cal-grid button {
   border-radius: .5rem;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border: 1px solid white;
   outline: none;
-  background-color: gray;
-  color: aliceblue;
+  background-color: rgb(81, 65, 65);
+  color: #fff;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
 }
 
 .cal-grid .nums {
@@ -59,6 +61,8 @@ body {
   word-wrap: break-word;
   word-break: break-all;
   border-radius: .5rem;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
 }
 
 .output .green  {
@@ -95,7 +99,7 @@ body {
 
 .output .second-space {
   color: #fff;;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 780px) {
